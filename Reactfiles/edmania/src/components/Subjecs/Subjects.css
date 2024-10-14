@@ -1,0 +1,35 @@
+.Subjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;    
+}
+
+.Subjects .SubBtn {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.Subjects button {
+    min-width: 200px;
+    padding: 20px;
+    font-size: 2rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.Subjects button:hover {
+    color: #34db4a;
+    border: 3px solid #34db4a;
+}
+
+/* Media query for screens with a maximum width of 600px (adjust as needed) */
+@media screen and (max-width: 600px) {
+    .Subjects {
+        flex-direction: column;
+        align-items: center;
+    }
+}

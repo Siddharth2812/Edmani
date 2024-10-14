@@ -1,0 +1,70 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem;
+    background-color: #333;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.desktopMenu {
+    display: flex;
+}
+
+.option {
+    text-decoration: none;
+    color: #aaa;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.option:hover {
+    color: yellow;
+}
+
+.mobMenu {
+    display: none;
+    max-height: 30px;
+    cursor: pointer;
+}
+
+.navMenu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+}
+
+.listItem {
+    text-decoration: none;
+    color: #aaa;
+    padding: 1rem;
+    cursor: pointer;
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.listItem:hover {
+    color: yellow;
+}
+
+/* Add media query for mobile responsiveness (adjust as needed) */
+@media screen and (max-width: 768px) {
+    .desktopMenu {
+        display: none;
+    }
+
+    .mobMenu {
+        display: block;
+    }
+
+    .navMenu {
+        display: flex;
+    }
+}

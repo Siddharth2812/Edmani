@@ -1,0 +1,80 @@
+.ChatBot {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.ChatInput {
+    position: relative;
+}
+
+.InputContainer {
+    position: relative;
+}
+
+.ChatBot input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ButtonsContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin-left: 5px;
+}
+
+.ChatOutput {
+    max-width: 100%;
+    max-height: 350px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc;
+    text-align: start;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.ChatInput input {
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ChatBot button {
+    min-width: 4rem;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ChatBot .mic {
+    width: 10px;
+    height: 10px;
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media screen and (max-width: 768px) {
+    .ChatBot {
+        max-width: 90%;
+    }
+
+    .ButtonsContainer {
+        position: relative;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    button {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+}

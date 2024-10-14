@@ -1,0 +1,47 @@
+.pagetitle{
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto; /* Center horizontally */
+
+}
+.userType {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.loginOption {
+    width: 250px; /* Set a fixed width for consistent box size */
+    height: 50px; /* Set a fixed height for consistent box size */
+    border-radius: 15px;
+    background-color: #74a3c3;
+    color: #100e0e;
+    border: 4px solid #3498db; /* Border color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    transition: border-color 0.3s ease-in-out; /* Add transition for a smoother effect */
+    margin-bottom: 1rem; /* Add some space between buttons */
+}
+
+.loginOption:hover {
+    border-color: #aaaa
+    ; /* Change border color on hover */
+}
+
+.loginOption img {
+    position: static;
+    float: left;
+}
+
+.loginOption h3 {
+    padding-left: 8rem;
+}
+
